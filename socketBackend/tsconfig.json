@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ES2020",                              /* Set the JavaScript version to ES2020. */
+    "lib": ["ES2020", "DOM"],                        /* Include ES2020 and DOM library declarations. */
+    "module": "CommonJS",                            /* Specify the module system. */
+    "strict": true,                                  /* Enable strict type checking. */
+    "esModuleInterop": true,                         /* Enable interop for CommonJS modules. */
+    "forceConsistentCasingInFileNames": true,        /* Ensure consistent casing in module imports. */
+    "skipLibCheck": true,                            /* Skip type checking of declaration files. */
+
+    /* Emit */
+    "outDir": "./dist",                              /* Output folder for compiled files. */
+    "sourceMap": true,                               /* Generate source maps for debugging. */
+    "removeComments": true,                          /* Remove comments in emitted JavaScript files. */
+
+    /* Type Checking */
+    "noImplicitAny": true,                           /* Disallow `any` type unless explicitly specified. */
+    "strictNullChecks": true,                        /* Ensure null and undefined are handled explicitly. */
+    "noImplicitReturns": true,                       /* Report errors for functions missing a return. */
+    "noUnusedLocals": true,                          /* Report unused variables in code. */
+    "noUnusedParameters": true,                      /* Report unused function parameters. */
+    "noFallthroughCasesInSwitch": true,              /* Report fallthrough cases in switch statements. */
+
+    /* Modules */
+    "moduleResolution": "node",                      /* Use Node.js module resolution. */
+    "baseUrl": "./",                                 /* Base path for resolving non-relative imports. */
+    "paths": {                                       /* Aliases for module imports. */
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*"],                           /* Include all TypeScript files in the 'src' directory. */
+  "exclude": ["node_modules", "dist", "**/*.test.ts"] /* Exclude specific folders and files. */
+}
